@@ -1,0 +1,77 @@
+import { useState, useEffect } from "react";
+
+export default function Header() {
+  const [activeSection, setActiveSection] = useState("home");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  // Track scroll position to detect active section
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+
+    const handleScroll = () => {
+      let current = "home";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+      setActiveSection(current);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navItems = ["home", "about", "skills", "resume", "projects", "contact"];
+
+  return (
+    <header className="bg-gray-900 text-white p-4 sticky top-0 flex justify-between items-center z-50 shadow-lg">
+      <h1 className="text-xl font-bold">Sushreeta Kumari Sahu</h1>
+
+      {/* Desktop Navigation */}
+      <nav className="hidden md:flex">
+        {navItems.map((item) => (
+          <a
+            key={item}
+            href={`#${item}`}
+            className={`mx-3 transition duration-200 ${
+              activeSection === item
+                ? "text-yellow-400 border-b-2 border-yellow-400"
+                : "hover:text-gray-300"
+            }`}
+          >
+            {item.charAt(0).toUpperCase() + item.slice(1)}
+          </a>
+        ))}
+      </nav>
+
+      {/* Mobile Hamburger */}
+      <button onClick={toggleMenu} className="md:hidden focus:outline-none">
+        <span className="text-2xl">☰</span>
+      </button>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="absolute top-16 left-0 w-full bg-gray-800 flex flex-col md:hidden p-4 space-y-3">
+          {navItems.map((item) => (
+            <a
+              key={item}
+              href={`#${item}`}
+              onClick={() => setIsOpen(false)}
+              className={`transition duration-200 ${
+                activeSection === item
+                  ? "text-yellow-400"
+                  : "hover:text-gray-300"
+              }`}
+            >
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </a>
+          ))}
+        </div>
+      )}
+    </header>
+  );
+}
