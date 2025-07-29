@@ -15,7 +15,7 @@ export default function Resume() {
         </p>
 
         <a
-          href="/Sushreeta_Sahu_Resume_V1.pdf"
+          href={`${process.env.PUBLIC_URL}/Sushreeta_Sahu_Resume_V1.pdf`}
           download
           className="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 hover:shadow-indigo-500/50 transition duration-300 text-lg font-medium"
         >
