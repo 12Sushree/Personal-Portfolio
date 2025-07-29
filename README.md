@@ -23,20 +23,9 @@ Built with modern web technologies to create a responsive and interactive user e
 
 ---
 
-## 📂 Project Structure
-
-├── public
-├── src
-│ ├── assets # Images and other static files
-│ ├── components # Reusable UI components
-│ ├── pages # Portfolio pages
-│ ├── App.jsx # Main React file
-│ └── main.jsx # Entry point
-└── README.md
-
 ## 🌐 Live Demo
 
-👉 [Click here to view my portfolio](https://your-portfolio-link.com)
+👉 [My Portfolio](https://sushreeta-personal-portfolio.vercel.app/)
 
 ## 👩‍💻 Author
 
@@ -45,4 +34,4 @@ Built with modern web technologies to create a responsive and interactive user e
 - 📧 sushreeta.shu@gmail.com
 - 🔗 [LinkedIn](https://www.linkedin.com/in/12Sushree)
 - 💻 [GitHub](https://github.com/12Sushree)
-- 🌐 [Portfolio](https://your-portfolio-link.com)
+- 🌐 [Portfolio](https://sushreeta-personal-portfolio.vercel.app/)

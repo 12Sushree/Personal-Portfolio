@@ -9,6 +9,7 @@ import Skills from "./pages/Skills";
 import Resume from "./pages/Resume";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Internships from "./pages/Internships";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Skills />
         <Resume />
         <Projects />
+        <Internships />
         <Contact />
       </main>
     </div>

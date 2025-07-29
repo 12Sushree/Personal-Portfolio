@@ -6,18 +6,22 @@ export default function Header() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  // Track scroll position to detect active section
+  // ✅ Improved Scroll Detection
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
 
     const handleScroll = () => {
       let current = "home";
+      const scrollY = window.scrollY + 150; // offset for header height
+
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 100;
-        if (window.scrollY >= sectionTop) {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
           current = section.getAttribute("id");
         }
       });
+
       setActiveSection(current);
     };
 
@@ -25,7 +29,16 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = ["home", "about", "skills", "resume", "projects", "contact"];
+  // ✅ Added internships to navigation
+  const navItems = [
+    "home",
+    "about",
+    "skills",
+    "resume",
+    "projects",
+    "internships",
+    "contact",
+  ];
 
   return (
     <header className="bg-gray-900 text-white p-4 sticky top-0 flex justify-between items-center z-50 shadow-lg">
@@ -39,7 +52,7 @@ export default function Header() {
             href={`#${item}`}
             className={`mx-3 transition duration-200 ${
               activeSection === item
-                ? "text-yellow-400 border-b-2 border-yellow-400"
+                ? "text-indigo-400 border-b-2 border-indigo-400"
                 : "hover:text-gray-300"
             }`}
           >
@@ -63,7 +76,7 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
               className={`transition duration-200 ${
                 activeSection === item
-                  ? "text-yellow-400"
+                  ? "text-indigo-400"
                   : "hover:text-gray-300"
               }`}
             >
