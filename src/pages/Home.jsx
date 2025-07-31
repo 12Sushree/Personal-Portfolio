@@ -59,7 +59,7 @@ export default function Home() {
         <img
           src={profileImg}
           alt="Profile"
-          className="rounded-full w-70 h-70 object-cover shadow-lg border-4 border-indigo-400 hover:scale-105 transition-transform duration-300 animate-glow"
+          className="rounded-full w-50 h-50 object-cover shadow-lg border-4 border-indigo-400 hover:scale-105 transition-transform duration-300 animate-glow"
         />
       </div>
     </section>
