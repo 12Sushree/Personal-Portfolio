@@ -5,7 +5,7 @@ export default function About() {
     <section
       id="about"
       className="min-h-screen flex items-center justify-center 
-                 bg-gradient-to-br from-black via-gray-900 to-black px-6 py-16"
+                 bg-black px-6 py-16"
     >
       <div
         className="max-w-4xl w-full text-center md:text-left animate-slideFade 

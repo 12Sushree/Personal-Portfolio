@@ -14,7 +14,7 @@ export default function Internships() {
     <section
       id="internships"
       className="min-h-screen flex items-center justify-center 
-                 bg-gradient-to-br from-black via-gray-900 to-black px-4 py-16"
+                 bg-black px-4 py-16"
     >
       <div
         className="max-w-3xl w-full bg-gray-900 p-8 rounded-2xl shadow-lg 

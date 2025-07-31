@@ -40,7 +40,7 @@ export default function Skills() {
     <section
       id="skills"
       className="min-h-screen flex items-center justify-center 
-                 bg-gradient-to-br from-black via-gray-900 to-black px-4 py-16"
+                 bg-black px-4 py-16"
     >
       <div className="max-w-5xl w-full">
         <h2 className="text-3xl font-bold text-center text-white mb-4">

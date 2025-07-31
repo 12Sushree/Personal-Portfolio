@@ -6,7 +6,7 @@ export default function Contact() {
     <section
       id="contact"
       className="min-h-screen flex items-center justify-center 
-                 bg-gradient-to-br from-black via-gray-900 to-black px-4 py-16"
+                 bg-black px-4 py-16"
     >
       <div className="bg-gray-900 p-8 md:p-12 rounded-2xl shadow-lg max-w-lg w-full animate-slideFade">
         <h2 className="text-3xl font-extrabold text-center text-white mb-4">

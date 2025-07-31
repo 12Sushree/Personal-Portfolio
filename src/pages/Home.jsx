@@ -7,7 +7,7 @@ export default function Home() {
     <section
       id="home"
       className="min-h-screen flex flex-col md:flex-row items-center justify-center 
-                 bg-gradient-to-br from-black via-gray-900 to-black px-4"
+                 bg-black px-4"
     >
       {/* Left */}
       <div className="flex-1 text-center md:text-left space-y-6 pl-6 md:pl-12 animate-slideFade">
