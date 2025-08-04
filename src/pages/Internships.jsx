@@ -18,16 +18,16 @@ export default function Internships() {
     >
       <div
         className="max-w-3xl w-full bg-gray-900 p-8 rounded-2xl shadow-lg 
-                      hover:shadow-indigo-500/40 hover:scale-[1.02] transition transform duration-300"
+                      hover:shadow-[#A855F7] hover:scale-[1.02] transition transform duration-300"
       >
         {/* Heading */}
-        <h2 className="text-3xl font-bold text-center text-white mb-6 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-indigo-500 after:mx-auto after:mt-2 after:rounded-full">
+        <h2 className="text-3xl font-bold text-center text-white mb-6 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-[#A855F7] after:mx-auto after:mt-2 after:rounded-full">
           Internship
         </h2>
 
         {/* Internship Card */}
         <div className="animate-fadeIn">
-          <h3 className="text-xl font-semibold text-indigo-400">
+          <h3 className="text-xl font-semibold text-[#A855F7]">
             {internship.role}
           </h3>
           <p className="text-white text-lg">{internship.company}</p>
@@ -41,7 +41,7 @@ export default function Internships() {
             {internship.tech.map((t, i) => (
               <span
                 key={i}
-                className="bg-indigo-800 text-indigo-100 px-2 py-0.5 rounded text-xs"
+                className="bg-[#4f2379] text-white px-2 py-0.5 rounded text-xs"
               >
                 {t}
               </span>

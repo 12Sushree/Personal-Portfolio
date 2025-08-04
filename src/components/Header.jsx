@@ -52,7 +52,7 @@ export default function Header() {
             href={`#${item}`}
             className={`mx-3 transition duration-200 ${
               activeSection === item
-                ? "text-indigo-400 border-b-2 border-indigo-400"
+                ? "text-[#A855F7] border-b-2 border-[#A855F7]"
                 : "hover:text-gray-300"
             }`}
           >
@@ -76,7 +76,7 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
               className={`transition duration-200 ${
                 activeSection === item
-                  ? "text-indigo-400"
+                  ? "text-[#A855F7]"
                   : "hover:text-gray-300"
               }`}
             >

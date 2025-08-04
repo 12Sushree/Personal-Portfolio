@@ -11,13 +11,13 @@ export default function About() {
         className="max-w-4xl w-full text-center md:text-left animate-slideFade 
                       bg-gray-900 bg-opacity-90 p-8 rounded-2xl shadow-lg"
       >
-        <h2 className="text-4xl font-extrabold text-white mb-6 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-indigo-500 after:mx-auto md:after:mx-0 after:mt-2 after:rounded-full">
+        <h2 className="text-4xl font-extrabold text-white mb-6 relative after:content-[''] after:block after:w-24 after:h-1 after:bg-[#A855F7] after:mx-auto md:after:mx-0 after:mt-2 after:rounded-full">
           About Me
         </h2>
 
         <p className="text-lg text-gray-300 leading-relaxed mb-4">
           I am{" "}
-          <span className="text-indigo-400 font-semibold">
+          <span className="text-[#A855F7] font-semibold">
             Sushreeta Kumari Sahu
           </span>
           , a web developer and Java enthusiast skilled in{" "}

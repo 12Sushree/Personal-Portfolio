@@ -58,7 +58,7 @@ export default function Skills() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
-              className="flex flex-col items-center bg-gray-900 p-4 rounded-xl shadow-md hover:shadow-indigo-500/30 transition text-center"
+              className="flex flex-col items-center bg-gray-900 p-4 rounded-xl shadow-md hover:shadow-[#A855F7] transition text-center"
             >
               <div className="text-3xl mb-2">{s.icon}</div>
               <span className="text-gray-200 font-medium">{s.name}</span>

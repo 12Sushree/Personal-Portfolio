@@ -43,9 +43,9 @@ export default function Projects() {
           {projects.map((p, i) => (
             <article
               key={i}
-              className="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-indigo-500/40 transition hover:scale-105"
+              className="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-[#A855F7] transition hover:scale-105"
             >
-              <h3 className="text-xl font-semibold text-indigo-400 mb-2">
+              <h3 className="text-xl font-semibold text-[#A855F7] mb-2">
                 {p.title}
               </h3>
               <p className="text-gray-300 mb-3">{p.description}</p>
@@ -53,7 +53,7 @@ export default function Projects() {
                 {p.tech.map((t, j) => (
                   <span
                     key={j}
-                    className="bg-indigo-800 text-indigo-100 px-2 py-0.5 rounded text-xs"
+                    className="bg-[#4f2379] text-white px-2 py-0.5 rounded text-xs"
                   >
                     {t}
                   </span>
@@ -63,7 +63,7 @@ export default function Projects() {
                 href={p.codeLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-indigo-400 text-indigo-400 px-4 py-1.5 rounded-md hover:bg-indigo-950 text-sm"
+                className="border border-[#A855F7] text-[#A855F7] px-4 py-1.5 rounded-md hover:bg-[#4f2379] hover:text-white text-sm"
               >
                 GitHub
               </a>

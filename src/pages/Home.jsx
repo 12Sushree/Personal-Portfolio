@@ -12,10 +12,10 @@ export default function Home() {
       {/* Left */}
       <div className="flex-1 text-center md:text-left space-y-6 pl-6 md:pl-12 animate-slideFade">
         <h1 className="text-4xl md:text-5xl font-bold text-white">
-          Hi, I'm <span className="text-[#EF4444]">Sushreeta Kumari Sahu</span>
+          Hi, I'm <span className="text-[#A855F7]">Sushreeta Kumari Sahu</span>
         </h1>
 
-        <h2 className="text-3xl text-[#EF4444] font-bold">
+        <h2 className="text-3xl text-[#A855F7] font-bold">
           <Typewriter
             words={[
               "Full-Stack Developer (MERN)",
@@ -41,13 +41,13 @@ export default function Home() {
         <div className="flex justify-center md:justify-start gap-4">
           <a
             href="#projects"
-            className="bg-indigo-600 text-white px-6 py-2 rounded-xl hover:bg-indigo-700 transition duration-300 shadow-md"
+            className="border border-[#A855F7] text-[#A855F7] px-6 py-2 rounded-xl hover:bg-[#A855F7] hover:text-white transition duration-300"
           >
             View Projects
           </a>
           <a
             href="#contact"
-            className="border border-indigo-400 text-indigo-400 px-6 py-2 rounded-xl hover:bg-indigo-900 transition duration-300"
+            className="border border-[#A855F7] text-[#A855F7] px-6 py-2 rounded-xl hover:bg-[#A855F7] hover:text-white transition duration-300"
           >
             Contact Me
           </a>
@@ -59,7 +59,7 @@ export default function Home() {
         <img
           src={profileImg}
           alt="Profile"
-          className="rounded-full w-50 h-50 object-cover shadow-lg border-4 border-indigo-400 hover:scale-105 transition-transform duration-300 animate-glow"
+          className="rounded-full w-50 h-50 sm:w-50 sm:h-50 md:w-100 md:h-100 object-cover shadow-lg border-4 border-[#A855F7] hover:scale-105 transition-transform duration-300 animate-glow"
         />
       </div>
     </section>

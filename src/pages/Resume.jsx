@@ -15,9 +15,10 @@ export default function Resume() {
         </p>
 
         <a
-          href={`${process.env.PUBLIC_URL}/Sushreeta_Sahu_Resume_V1.pdf`}
+          href="https://drive.google.com/file/d/1yURP8J7kAoG9v7jwF8np-JQnV7VWA721/view?usp=sharing"
+          // href={`${process.env.PUBLIC_URL}/Sushreeta_Sahu_Resume_V1.pdf`}
           download
-          className="inline-flex items-center gap-2 bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 hover:shadow-indigo-500/50 transition duration-300 text-lg font-medium"
+          className="inline-flex items-center gap-2 bg-[#4f2379] text-white px-6 py-3 rounded-md text-lg font-medium"
         >
           <FaDownload className="text-xl" /> Download Resume
         </a>
