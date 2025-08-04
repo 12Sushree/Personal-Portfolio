@@ -12,10 +12,10 @@ export default function Home() {
       {/* Left */}
       <div className="flex-1 text-center md:text-left space-y-6 pl-6 md:pl-12 animate-slideFade">
         <h1 className="text-4xl md:text-5xl font-bold text-white">
-          Hi, I'm <span className="text-indigo-400">Sushreeta Kumari Sahu</span>
+          Hi, I'm <span className="text-[#EF4444]">Sushreeta Kumari Sahu</span>
         </h1>
 
-        <h2 className="text-3xl text-indigo-300 font-bold">
+        <h2 className="text-3xl text-[#EF4444] font-bold">
           <Typewriter
             words={[
               "Full-Stack Developer (MERN)",
